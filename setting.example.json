@@ -1,0 +1,15 @@
+{
+  "BOT_ACCOUNT": {
+    "username": "name",
+    "password": "oauth:token"
+  },
+  "channels": [
+    "channel"
+  ],
+
+  "MONGODB_HOST": "localhost",
+  "MONGODB_PORT": 27017,
+  "MONGODB_USER": "user",
+  "MONGODB_PASSWORD": "password",
+  "DBNAME": "MapRequest"
+}

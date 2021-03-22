@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mongoose": "^5.12.1",
+    "tmi.js": "^1.7.5"
+  },
+  "name": "adofai-request",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node main.js"
+  },
+  "author": "Hyonsu",
+  "license": "AGPL-3.0-or-later",
+  "description": "ADOFAI map request twitch bot.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjdgustn/adofai-request.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wjdgustn/adofai-request/issues"
+  },
+  "homepage": "https://github.com/wjdgustn/adofai-request#readme"
+}
