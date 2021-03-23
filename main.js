@@ -24,6 +24,8 @@ client.on('chat', async (chn, data, msg, self) => {
     if(self) return;
 
     if(msg.startsWith('!신청')) {
+        if(msg.trim() == '!신청') return client.say(chn, '신청할 맵을 입력해야 합니다!\n사용법 : !신청 <맵>');
+        
         await Level.create({
             url: msg.replace('!신청 ', ''),
             channel: chn
