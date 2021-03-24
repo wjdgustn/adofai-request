@@ -5,7 +5,7 @@ const setting = require('../setting.json');
 
 module.exports = () => {
     const connect = () => {
-        mongoose.connect(`mongodb://${setting.MONGODB_USER}:${setting.MONGODB_PASSWORD}@${setting.MONGODB_HOST}:${setting.MONGODB_PORT}/admin`, {
+        mongoose.connect(`mongodb://${setting.MONGODB_USER}:${setting.MONGODB_PASSWORD}@${setting.MONGODB_HOST}:${setting.MONGODB_PORT}/${setting.DBNAME}`, {
             dbName: setting.DBNAME
         }, (error) => {
             if(error) {
