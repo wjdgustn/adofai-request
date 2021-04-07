@@ -50,6 +50,11 @@ client.on('chat', async (chn, data, msg, self) => {
         if(levels.length == 1) return client.say(chn, '모든 맵을 마쳤습니다!');
         return client.say(chn, `맵을 넘겼습니다. 이번 맵은 ${levels[1].url} 입니다.`);
     }
+
+    if(msg == "!맵갯수") {
+        const count = await Level.countDocuments({ channel : chn });
+        return client.say(chn, `현재 맵 갯수는 ${count}개입니다.`);
+    }
 });
 
 client.connect();
